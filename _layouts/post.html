@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<article class="max-width-3 margin-horizontal-auto px-md py-md" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    <h1 itemprop="name headline">{{ page.title | escape }}</h1>
+    <p>
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        created: {{ page.date | date: site.date_format }}
+      </time>
+    </p>
+  </header>
+
+  <div itemprop="articleBody">
+    {{ content }}
+  </div>
+  <a href="{{ page.url | relative_url }}" hidden></a>
+  <div class="px-md">
+    <a href="/">back home</a>
+  </div>
+</article>

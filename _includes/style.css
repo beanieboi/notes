@@ -1,0 +1,96 @@
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: subpixel-antialiased;
+  text-rendering: optimizelegibility;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fffdff;
+  color: #111111;
+  font-family: -apple-system, "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.66667;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0 0 0 0;
+}
+
+*,
+* :before,
+* :after {
+  box-sizing: inherit;
+}
+
+ul.post-list {
+  margin: 0;
+  padding: 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.pb-sm {
+  padding-bottom: 0.8rem;
+}
+
+.px-md {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-md {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+a {
+  color: inherit;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  touch-action: manipulation;
+}
+
+:link,
+:visited {
+  text-decoration: none;
+}
+
+:active,
+:hover {
+  outline: 0;
+}
+
+.margin-horizontal-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.max-width-3 {
+  max-width: 1280px;
+}
+
+.me-emoji {
+  text-align: center;
+  width: 17px;
+  display: inline-block;
+}
+
+.feed-icon {
+  vertical-align: text-bottom;
+}

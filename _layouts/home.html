@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<div class="max-width-3 margin-horizontal-auto px-md py-md">
+  <h1>Categories</h1>
+  {% assign categories = site.categories | sort %}
+  {% for category in categories %}
+  <span>
+      <a href="/category/{{ category | first | slugify }}/" style="font-size: {{ category | last | size  |  times: 4 | plus: 80  }}%">
+        {{ category[0] | replace:'-', ' ' }} ({{ category | last | size }})
+      </a>
+  </span>
+  {% endfor %}
+</div>
+<div class="max-width-3 margin-horizontal-auto px-md py-md">
+  <h1>Recent</h1>
+  <ul class="margin-horizontal-auto post-list">
+    {% for post in site.posts %}
+    <li class="flex flex-column justify-between pb-sm">
+      <b><a href="{{ post.url }}">{{ post.title | strip_html | truncatehtml | truncate: 50 }}</a></b>
+      {{ post.content | strip_html | truncatehtml | truncatewords: 20 }}
+    </li>
+    {% endfor %}
+  </ul>
+</div>
