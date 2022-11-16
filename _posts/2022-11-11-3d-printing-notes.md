@@ -5,7 +5,8 @@ categories: 3d-printing
 
 ### printing temperatures
 
-- Overtue PLA (matte white): 195°C
+- Sain Smart TPU 95A: 195°C
+- Overtue PLA (matte white): 200°C
 - colorFabb nGen (gold metallic): 225°C
 - Prusament PETG: No changes to default PrusaSlicer profile
 
@@ -16,6 +17,7 @@ categories: 3d-printing
     - Prusament PETG: -0.750
     - colorFabb nGen: -0.730
     - 3DJake PLA: -0.700
+    - Sain Smart TPU 95A: -0.600
   - Spring Steel Sheet
     - Prusament PETG: -0.380
     - 3DJake PLA: -0.360
