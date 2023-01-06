@@ -27,5 +27,6 @@ categories: 3d-printing
 - Overtue Matte White (wood spool)
   - batch: A2203230088 weight: 178g
   - batch: A2203240002 weight: 176g
+  - batch: A2203240002 weight: 178g
 - Sain Smart TPU 95A weight: 194g
 - colorFabb nGen (transparent spool): 252g
