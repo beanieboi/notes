@@ -1,6 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.3.1"
+ruby file: ".ruby-version"
+
+gem "jekyll"
 
 group :jekyll_plugins do
   gem "jekyll-feed"
