@@ -1,7 +1,7 @@
 FROM ruby:3.4.7 AS builder
 RUN apt-get update -qq && apt-get install -y build-essential nodejs
 WORKDIR /srv/jekyll
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile Gemfile.lock .ruby-version ./
 RUN bundle install
 COPY . .
 RUN chown 1000:1000 -R /srv/jekyll
